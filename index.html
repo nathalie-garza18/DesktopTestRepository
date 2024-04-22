@@ -83,6 +83,10 @@ var reader = new FileReader();
         var img = new Image();
         img.onload = function() {
           /*Draws the image onto the drawing canvas. The specific canvas is referred to by "context". */
+. */
+          var canvas = document.getElementById('myCanvas');
+          var context = canvas.getContext("2d");
+          drawImageIOSFix(context,img, 0, 0, img.naturalWidth, img.naturalHeight, 0, 0, 600, 500);
 
 
 </script>
