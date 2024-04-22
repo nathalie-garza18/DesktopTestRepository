@@ -133,6 +133,23 @@ var reader = new FileReader();
 <a href="#two" class="w3-btn w3-black"> Click here to begin! </a> <!--This adds a button that takes you to page two to begin the questions→
 
 	  </div>
+<!--This is the start of my page 2-->
+<div class="page" id="two">
+	<div class="w3-container w3-flat-carrot">
+		<h1>Question 1</h1>
+	</div>
+	
+	<div id="content" class="w3-container">
+		<p>Is your mole symmetrical? (Are the two halves of your mole mirror images of each other?) </p> <!--This is my question 1-->
+		<!--This is where my user can answer the question via yes or no buttons-->
+		<!--My user will be sent to the next page after answering the question-->
+		<a href="#three"  onclick="benignAdd();" class="w3-btn w3-black">Yes</a>
+		<!--If the user answers yes to this question, it will add one to the benign count-->
+		<a href="#three"  onclick="malignantAdd();" class="w3-btn w3-black">No</a>
+		<!--If the user answers no to this question, it will add one to the malignant count-->
+         	
+	</div>
+</div> <!--This is the end of my page 2 question and content→
 
 
 
