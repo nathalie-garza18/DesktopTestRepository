@@ -77,6 +77,12 @@ var file = fileInput.files[0];
     var imageType = /image.*/;
     /* if (file.type.match(imageType)) checks that the selected file is indeed an image. */
     if (file.type.match(imageType)) {
+var reader = new FileReader();
+      reader.onload = function(e) {
+        messageDisplayArea.innerHTML = "You selected an image!";
+        var img = new Image();
+        img.onload = function() {
+          /*Draws the image onto the drawing canvas. The specific canvas is referred to by "context". */
 
 
 </script>
