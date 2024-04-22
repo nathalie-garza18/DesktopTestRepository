@@ -73,6 +73,11 @@ window.onload = function() {
   /* fileInput.addEventListener looks for any change in the <input> tag indicating that the user has selected a file (picture). */
 
 fileInput.addEventListener('change', function(e) {
+var file = fileInput.files[0];
+    var imageType = /image.*/;
+    /* if (file.type.match(imageType)) checks that the selected file is indeed an image. */
+    if (file.type.match(imageType)) {
+
 
 </script>
 
